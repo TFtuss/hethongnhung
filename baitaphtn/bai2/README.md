@@ -15,13 +15,7 @@ make
 ```
 
 ## Nap qua ST-Link
-
-```bash
-make info
 make flash
 ```
 
-```bash
-st-flash --reset write build/bai2.bin 0x08000000
-```
-
+## Video demo
