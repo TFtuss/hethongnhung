@@ -25,4 +25,3 @@ make flash
 st-flash --reset write build/bai2.bin 0x08000000
 ```
 
-Ket noi SWDIO, SWCLK, GND va 3.3V. 
