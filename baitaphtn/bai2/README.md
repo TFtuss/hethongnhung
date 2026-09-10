@@ -20,11 +20,10 @@ make
 make info
 make flash
 ```
-
 Lenh truc tiep:
 
 ```bash
 st-flash --reset write build/bai2.bin 0x08000000
 ```
 
-Ket noi SWDIO, SWCLK, GND va 3.3V. Moi chan LED can co dien tro han dong.
+Ket noi SWDIO, SWCLK, GND va 3.3V. 
