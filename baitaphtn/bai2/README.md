@@ -6,17 +6,8 @@ tu PA7 ve PA0 va lap lai.
 Chuong trinh chi dung thanh ghi RCC va GPIOA, khong dung STD, HAL hay SPL.
 Mac dinh LED active-high.
 
-## Build
-
-```bash
-cd /home/phuc/baitaphtn/bai2
-make clean
-make
-```
-
 ## Nap qua ST-Link
 make flash
-```
 
-Video Demo
+## Video Demo
 
