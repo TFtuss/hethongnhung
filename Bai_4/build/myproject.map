@@ -1,0 +1,136 @@
+
+Discarded input sections
+
+ .group         0x00000000        0xc build/src/main.o
+ .group         0x00000000        0xc build/src/main.o
+ .text          0x00000000        0x0 build/src/main.o
+ .data          0x00000000        0x0 build/src/main.o
+ .bss           0x00000000        0x0 build/src/main.o
+ .text          0x00000000        0x0 build/startup.o
+ .data          0x00000000        0x0 build/startup.o
+ .bss           0x00000000        0x0 build/startup.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x08000000         0x00010000         xr
+RAM              0x20000000         0x00005000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD build/src/main.o
+LOAD build/startup.o
+START GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a
+END GROUP
+                0x20005000                        _estack = (ORIGIN (RAM) + LENGTH (RAM))
+
+.isr_vector     0x08000000       0xb4
+ *(.isr_vector .isr_vector.*)
+ .isr_vector    0x08000000       0xb4 build/startup.o
+                0x08000000                vector_table
+
+.text           0x080000b4       0xe2
+                0x080000b4                        _stext = .
+ *(.text*)
+ .text.delay    0x080000b4       0x18 build/src/main.o
+ .text.startup.main
+                0x080000cc       0x88 build/src/main.o
+                0x080000cc                main
+ .text.Reset_Handler
+                0x08000154       0x40 build/startup.o
+                0x08000154                Reset_Handler
+ .text.Default_Handler
+                0x08000194        0x2 build/startup.o
+                0x08000194                Default_Handler
+ *(.rodata*)
+ *(.glue_7)
+ .glue_7        0x08000196        0x0 linker stubs
+ *(.glue_7t)
+ .glue_7t       0x08000196        0x0 linker stubs
+                0x08000196                        _etext = .
+
+.vfp11_veneer   0x08000198        0x0
+ .vfp11_veneer  0x08000198        0x0 linker stubs
+
+.v4_bx          0x08000198        0x0
+ .v4_bx         0x08000198        0x0 linker stubs
+
+.iplt           0x08000198        0x0
+ .iplt          0x08000198        0x0 build/src/main.o
+
+.rel.dyn        0x08000198        0x0
+ .rel.iplt      0x08000198        0x0 build/src/main.o
+
+.data           0x20000000        0x0 load address 0x08000196
+                0x20000000                        _sdata = .
+ *(.data*)
+                0x20000000                        _edata = .
+
+.igot.plt       0x20000000        0x0
+ .igot.plt      0x20000000        0x0 build/src/main.o
+
+.bss            0x20000000        0x0
+                0x20000000                        _sbss = .
+ *(.bss*)
+ *(COMMON)
+                0x20000000                        _ebss = .
+
+._user_heap_stack
+                0x20000000     0x1000
+                0x20000000                        . = ALIGN (0x8)
+                [!provide]                        PROVIDE (__HeapBase = .)
+                0x20001000                        . = (. + 0x1000)
+ *fill*         0x20000000     0x1000 
+                [!provide]                        PROVIDE (__HeapLimit = .)
+                0x20001000                        . = ALIGN (0x8)
+                [!provide]                        PROVIDE (__StackTop = _estack)
+
+/DISCARD/
+ *(.note.gnu.*)
+                0x08000196                        PROVIDE (_sidata = _etext)
+OUTPUT(build/myproject.elf elf32-littlearm)
+LOAD linker stubs
+
+.debug_info     0x00000000       0xd1
+ .debug_info    0x00000000       0xd1 build/src/main.o
+
+.debug_abbrev   0x00000000       0x90
+ .debug_abbrev  0x00000000       0x90 build/src/main.o
+
+.debug_aranges  0x00000000       0x28
+ .debug_aranges
+                0x00000000       0x28 build/src/main.o
+
+.debug_rnglists
+                0x00000000       0x1a
+ .debug_rnglists
+                0x00000000       0x1a build/src/main.o
+
+.debug_macro    0x00000000      0xe58
+ .debug_macro   0x00000000       0x3e build/src/main.o
+ .debug_macro   0x0000003e      0xacc build/src/main.o
+ .debug_macro   0x00000b0a      0x34e build/src/main.o
+
+.debug_line     0x00000000      0x137
+ .debug_line    0x00000000      0x137 build/src/main.o
+
+.debug_str      0x00000000     0x3864
+ .debug_str     0x00000000     0x3864 build/src/main.o
+                               0x39c7 (size before relaxing)
+
+.comment        0x00000000       0x26
+ .comment       0x00000000       0x26 build/src/main.o
+                                 0x27 (size before relaxing)
+
+.ARM.attributes
+                0x00000000       0x2b
+ .ARM.attributes
+                0x00000000       0x2d build/src/main.o
+ .ARM.attributes
+                0x0000002d       0x21 build/startup.o
+
+.debug_frame    0x00000000       0x40
+ .debug_frame   0x00000000       0x40 build/src/main.o
