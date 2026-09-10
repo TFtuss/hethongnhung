@@ -20,7 +20,6 @@ make
 make info
 make flash
 ```
-Lenh truc tiep:
 
 ```bash
 st-flash --reset write build/bai2.bin 0x08000000
