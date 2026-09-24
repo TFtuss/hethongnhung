@@ -1,3 +1,6 @@
 # hethongnhung
-tuan dau tien "baitaptn"
-tuan thu 2  "ngay18-9"
+tuan 1
+    dung thanh ghi + make + arm gnu 
+tuan 2
+    dung cubemx gen code setup
+    dung makefile de build va flash
