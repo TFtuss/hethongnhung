@@ -94,7 +94,7 @@ Discarded input sections
                 0x00000000       0x30 build/stm32f1xx_hal_gpio_ex.o
  .debug_ranges  0x00000000       0x20 build/stm32f1xx_hal_gpio_ex.o
  .debug_line    0x00000000      0x118 build/stm32f1xx_hal_gpio_ex.o
- .debug_str     0x00000000      0x20b build/stm32f1xx_hal_gpio_ex.o
+ .debug_str     0x00000000      0x218 build/stm32f1xx_hal_gpio_ex.o
  .comment       0x00000000       0x27 build/stm32f1xx_hal_gpio_ex.o
  .debug_frame   0x00000000       0x40 build/stm32f1xx_hal_gpio_ex.o
  .ARM.attributes
@@ -298,7 +298,7 @@ Discarded input sections
                 0x00000000       0x30 build/stm32f1xx_hal_rcc_ex.o
  .debug_ranges  0x00000000       0x38 build/stm32f1xx_hal_rcc_ex.o
  .debug_line    0x00000000      0x405 build/stm32f1xx_hal_rcc_ex.o
- .debug_str     0x00000000      0x37d build/stm32f1xx_hal_rcc_ex.o
+ .debug_str     0x00000000      0x38a build/stm32f1xx_hal_rcc_ex.o
  .comment       0x00000000       0x27 build/stm32f1xx_hal_rcc_ex.o
  .debug_frame   0x00000000       0x5c build/stm32f1xx_hal_rcc_ex.o
  .ARM.attributes
@@ -354,7 +354,7 @@ Discarded input sections
                 0x00000000       0x80 build/stm32f1xx_hal_dma.o
  .debug_ranges  0x00000000       0x70 build/stm32f1xx_hal_dma.o
  .debug_line    0x00000000      0xa4a build/stm32f1xx_hal_dma.o
- .debug_str     0x00000000      0x5b1 build/stm32f1xx_hal_dma.o
+ .debug_str     0x00000000      0x5be build/stm32f1xx_hal_dma.o
  .comment       0x00000000       0x27 build/stm32f1xx_hal_dma.o
  .debug_frame   0x00000000      0x144 build/stm32f1xx_hal_dma.o
  .ARM.attributes
@@ -440,7 +440,7 @@ Discarded input sections
                 0x00000000       0xa8 build/stm32f1xx_hal_pwr.o
  .debug_ranges  0x00000000       0x98 build/stm32f1xx_hal_pwr.o
  .debug_line    0x00000000      0x3cb build/stm32f1xx_hal_pwr.o
- .debug_str     0x00000000      0x445 build/stm32f1xx_hal_pwr.o
+ .debug_str     0x00000000      0x452 build/stm32f1xx_hal_pwr.o
  .comment       0x00000000       0x27 build/stm32f1xx_hal_pwr.o
  .debug_frame   0x00000000      0x140 build/stm32f1xx_hal_pwr.o
  .ARM.attributes
@@ -484,7 +484,7 @@ Discarded input sections
                 0x00000000       0x88 build/stm32f1xx_hal_flash.o
  .debug_ranges  0x00000000       0x78 build/stm32f1xx_hal_flash.o
  .debug_line    0x00000000      0x64d build/stm32f1xx_hal_flash.o
- .debug_str     0x00000000      0x4c3 build/stm32f1xx_hal_flash.o
+ .debug_str     0x00000000      0x4d0 build/stm32f1xx_hal_flash.o
  .comment       0x00000000       0x27 build/stm32f1xx_hal_flash.o
  .debug_frame   0x00000000      0x134 build/stm32f1xx_hal_flash.o
  .ARM.attributes
@@ -531,7 +531,7 @@ Discarded input sections
                 0x00000000       0x98 build/stm32f1xx_hal_flash_ex.o
  .debug_ranges  0x00000000       0x88 build/stm32f1xx_hal_flash_ex.o
  .debug_line    0x00000000      0x853 build/stm32f1xx_hal_flash_ex.o
- .debug_str     0x00000000      0x5d9 build/stm32f1xx_hal_flash_ex.o
+ .debug_str     0x00000000      0x5e6 build/stm32f1xx_hal_flash_ex.o
  .comment       0x00000000       0x27 build/stm32f1xx_hal_flash_ex.o
  .debug_frame   0x00000000      0x194 build/stm32f1xx_hal_flash_ex.o
  .ARM.attributes
@@ -564,7 +564,7 @@ Discarded input sections
                 0x00000000       0x60 build/stm32f1xx_hal_exti.o
  .debug_ranges  0x00000000       0x50 build/stm32f1xx_hal_exti.o
  .debug_line    0x00000000      0x56b build/stm32f1xx_hal_exti.o
- .debug_str     0x00000000      0x38a build/stm32f1xx_hal_exti.o
+ .debug_str     0x00000000      0x397 build/stm32f1xx_hal_exti.o
  .comment       0x00000000       0x27 build/stm32f1xx_hal_exti.o
  .debug_frame   0x00000000       0xe8 build/stm32f1xx_hal_exti.o
  .ARM.attributes
@@ -587,7 +587,7 @@ Discarded input sections
                 0x00000000       0x20 build/sysmem.o
  .debug_ranges  0x00000000       0x10 build/sysmem.o
  .debug_line    0x00000000       0xfd build/sysmem.o
- .debug_str     0x00000000      0x1c2 build/sysmem.o
+ .debug_str     0x00000000      0x1cf build/sysmem.o
  .comment       0x00000000       0x27 build/sysmem.o
  .debug_frame   0x00000000       0x28 build/sysmem.o
  .ARM.attributes
@@ -623,7 +623,7 @@ Discarded input sections
                 0x00000000       0xa8 build/syscalls.o
  .debug_ranges  0x00000000       0x98 build/syscalls.o
  .debug_line    0x00000000      0x372 build/syscalls.o
- .debug_str     0x00000000      0x3ab build/syscalls.o
+ .debug_str     0x00000000      0x3b8 build/syscalls.o
  .comment       0x00000000       0x27 build/syscalls.o
  .debug_frame   0x00000000      0x190 build/syscalls.o
  .ARM.attributes
@@ -1485,20 +1485,20 @@ LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a
  .debug_line    0x00005882      0x11e /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-init.o)
  .debug_line    0x000059a0      0x1b1 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memset.o)
 
-.debug_str      0x00000000     0x1e18
- .debug_str     0x00000000     0x1e18 build/main.o
-                                0x847 (size before relaxing)
- .debug_str     0x00001e18      0x1e1 build/stm32f1xx_it.o
- .debug_str     0x00001e18      0x643 build/stm32f1xx_hal_msp.o
- .debug_str     0x00001e18      0xc93 build/stm32f1xx_hal_uart.o
- .debug_str     0x00001e18      0x7e2 build/stm32f1xx_hal.o
- .debug_str     0x00001e18      0x5ca build/stm32f1xx_hal_rcc.o
- .debug_str     0x00001e18      0x3a9 build/stm32f1xx_hal_gpio.o
- .debug_str     0x00001e18      0x873 build/stm32f1xx_hal_cortex.o
- .debug_str     0x00001e18      0x1fe build/system_stm32f1xx.o
- .debug_str     0x00001e18       0x48 build/startup_stm32f103xb.o
- .debug_str     0x00001e18      0x1f2 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-init.o)
- .debug_str     0x00001e18      0x1a5 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memset.o)
+.debug_str      0x00000000     0x1e25
+ .debug_str     0x00000000     0x1e25 build/main.o
+                                0x854 (size before relaxing)
+ .debug_str     0x00001e25      0x1ee build/stm32f1xx_it.o
+ .debug_str     0x00001e25      0x650 build/stm32f1xx_hal_msp.o
+ .debug_str     0x00001e25      0xca0 build/stm32f1xx_hal_uart.o
+ .debug_str     0x00001e25      0x7ef build/stm32f1xx_hal.o
+ .debug_str     0x00001e25      0x5d7 build/stm32f1xx_hal_rcc.o
+ .debug_str     0x00001e25      0x3b6 build/stm32f1xx_hal_gpio.o
+ .debug_str     0x00001e25      0x880 build/stm32f1xx_hal_cortex.o
+ .debug_str     0x00001e25      0x20b build/system_stm32f1xx.o
+ .debug_str     0x00001e25       0x55 build/startup_stm32f103xb.o
+ .debug_str     0x00001e25      0x1f2 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-init.o)
+ .debug_str     0x00001e25      0x1a5 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memset.o)
 
 .debug_frame    0x00000000      0xdcc
  .debug_frame   0x00000000       0x90 build/main.o

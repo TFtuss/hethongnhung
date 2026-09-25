@@ -183,6 +183,13 @@ $(BUILD_DIR)/%.bin: $(BUILD_DIR)/%.elf | $(BUILD_DIR)
 $(BUILD_DIR):
 	mkdir $@		
 
+######################################
+# flash the application
+######################################
+flash: $(BUILD_DIR)/$(TARGET).bin
+	@echo "Flashing $< to STM32 at 0x08000000..."
+	@st-flash --reset write $< 0x08000000 && echo "FLASH SUCCESS: $< written, verified, and reset."
+
 #######################################
 # clean up
 #######################################
@@ -193,5 +200,7 @@ clean:
 # dependencies
 #######################################
 -include $(wildcard $(BUILD_DIR)/*.d)
+
+.PHONY: all flash clean
 
 # *** EOF ***

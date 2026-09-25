@@ -1,0 +1,12 @@
+#ifndef APP_CONFIG_H
+#define APP_CONFIG_H
+
+#define CLASS_ID "D23"
+#define GROUP_ID "N7"
+
+#define UART_BAUDRATE 115200U
+#define BUTTON_DEBOUNCE_MS 30U
+#define MESSAGE_QUEUE_LENGTH 8U
+#define MESSAGE_MAX_LENGTH 32U
+
+#endif

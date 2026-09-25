@@ -33,7 +33,8 @@ $(BUILD)/$(PROJECT).hex: $(BUILD)/$(PROJECT).elf
 $(BUILD)/$(PROJECT).bin: $(BUILD)/$(PROJECT).elf
 	$(OBJCOPY) -O binary $< $@
 flash: $(BUILD)/$(PROJECT).bin
-	st-flash write $< 0x08000000
+	@echo "Flashing $< to STM32 at 0x08000000..."
+	@st-flash --reset write $< 0x08000000 && echo "FLASH SUCCESS: $< written, verified, and reset."
 clean:
 	rm -rf $(BUILD)
 .PHONY: all flash clean
